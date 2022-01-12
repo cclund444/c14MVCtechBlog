@@ -1,0 +1,41 @@
+<div class="container">
+
+{{> post-info post}}
+
+<br />
+{{#if loggedIn}}
+<form class="comment-form">
+
+  <div class="form-group">
+    <label for="comment">Comment:</label>
+    <textarea name="comment-body" class="form-control" rows="5" id="comment"></textarea>
+  </div>
+
+  <div>
+    <button type="submit">add comment</button>
+  </div>
+</form>
+<br />
+<br />
+<br />
+{{/if}}
+
+
+<div class="comments">
+  {{#each post.comments}}
+  <section>
+    <ol>
+      <li class="list-group-item">
+        {{comment_text}}
+        <p class="username-comment">{{user.username}} on {{format_date createdAt}}</p>
+      </li>
+    </ol>
+  </section>
+  {{/each}}
+</div>
+
+
+
+<script src="../public/stylesheets/javascript/comment.js"></script>
+
+</div>

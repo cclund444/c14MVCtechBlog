@@ -1,0 +1,51 @@
+<div class="container">
+<section>
+
+  <h2 id="create-new-post-title">Create New Post</h2>
+
+
+<form class="new-post-form">
+  <div class="form-group">
+    <label for="usr" >Title:</label>
+    <input name="post-title" type="text" class="form-control" id="usr">
+  </div>
+  <div class="form-group">
+    <label for="comment">Body:</label>
+    <textarea name="post-body" class="form-control" rows="5" id="comment"></textarea>
+  </div>
+  <button type="submit" class="btn-default">Create</button>
+</form>
+
+
+<br />
+<br />
+<br />
+
+{{#if posts.length}}
+<section>
+  <h2 id="your-posts-title">Your Posts</h2>
+  <ol>
+    {{#each posts as |post|}}
+    <li class="list-group-item">
+
+
+      {{> post-info}}
+
+
+
+      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+    </li>
+    <br />
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+
+
+<script src="../public/stylesheets/javascript/add-post.js"></script>
+
+</div>
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
