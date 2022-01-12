@@ -1,0 +1,47 @@
+#logout {
+    border: none;
+    margin-top: 7px;
+    background-color: transparent;
+    color: rgb(230, 116, 116);
+  }
+  
+  #logout:hover {
+    color: rgb(87, 22, 22);
+  }
+  
+  button {
+    cursor: pointer;
+    color: rgb(51, 50, 50);
+    border-radius: 8px;
+  }
+  
+  button:hover {
+    color: rgb(139, 136, 136);
+  }
+  
+  #your-posts-title {
+    text-align: center;
+  }
+  
+  #create-new-post-title {
+    text-align: center;
+  }
+  
+  #your-post-title {
+    font-size: 23px;
+    color:rgb(224, 32, 32)
+  }
+  
+  .username-comment {
+    color: rgb(250, 245, 245);
+    font-size: 13px;
+  }
+  
+  .comments-number {
+    color:rgb(112, 8, 8);
+  }
+  © 2022 GitHub, Inc.
+  Terms
+  Privacy
+  Security
+  Statu
